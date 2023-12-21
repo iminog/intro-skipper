@@ -478,7 +478,7 @@ public static class FFmpegWrapper
 
         var args = string.Format(
             CultureInfo.InvariantCulture,
-            "-ss {0} -i \"{1}\" -to {2} -ac 2 -f chromaprint -fp_format raw -",
+            "-ss {0} -i \"{1}\" -to {2} -ac 1 -acodec pcm_s16le -ar 16000 -f chromaprint -fp_format raw -",
             start,
             episode.Path,
             end - start);
