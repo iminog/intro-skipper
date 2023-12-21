@@ -137,7 +137,7 @@ public class PluginConfiguration : BasePluginConfiguration
     /// Gets or sets the maximum number of bits (out of 32 total) that can be different between two Chromaprint points before they are considered dissimilar.
     /// Defaults to 6 (81% similar).
     /// </summary>
-    public int MaximumFingerprintPointDifferences { get; set; } = 6;
+    public int MaximumFingerprintPointDifferences { get; set; } = 7;
 
     /// <summary>
     /// Gets or sets the maximum number of seconds that can pass between two similar fingerprint points before a new time range is started.
