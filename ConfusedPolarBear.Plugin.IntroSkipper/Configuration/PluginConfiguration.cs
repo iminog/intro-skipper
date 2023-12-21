@@ -147,13 +147,13 @@ public class PluginConfiguration : BasePluginConfiguration
     /// <summary>
     /// Gets or sets the amount to shift inverted indexes by.
     /// </summary>
-    public int InvertedIndexShift { get; set; } = 2;
+    public int InvertedIndexShift { get; set; } = 1;
 
     /// <summary>
     /// Gets or sets the maximum amount of noise (in dB) that is considered silent.
     /// Lowering this number will increase the filter's sensitivity to noise.
     /// </summary>
-    public int SilenceDetectionMaximumNoise { get; set; } = -50;
+    public int SilenceDetectionMaximumNoise { get; set; } = -25;
 
     /// <summary>
     /// Gets or sets the minimum duration of audio (in seconds) that is considered silent.
